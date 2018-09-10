@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5129DA250DEB3F4CFD03900A /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF6A5060CB5DC20C1A0706AA /* Pods_OneSignalNotificationServiceExtension.framework */; };
+		9337CE4B4BF7F0FCDF138690 /* Pods_Hyroscop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F8597C77CFF4BF1914DBAE /* Pods_Hyroscop.framework */; };
+		A7818F15213AE08A00E439F1 /* NMAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7818F14213AE08A00E439F1 /* NMAKit.framework */; };
+		A7818F16213AE9EA00E439F1 /* NMAKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7818F14213AE08A00E439F1 /* NMAKit.framework */; };
+		A7818F17213AE9EA00E439F1 /* NMAKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7818F14213AE08A00E439F1 /* NMAKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A7818F20213B0D9100E439F1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7818F1F213B0D9100E439F1 /* NotificationService.swift */; };
+		A7818F24213B0D9100E439F1 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A7818F1D213B0D9100E439F1 /* OneSignalNotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A7818F2A213B15DD00E439F1 /* ScoringClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7818F29213B15DD00E439F1 /* ScoringClass.swift */; };
+		A7818F2C213B2D0400E439F1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7818F2B213B2D0400E439F1 /* Model.swift */; };
+		A7B83567213A704D004ACFF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B83566213A704D004ACFF1 /* AppDelegate.swift */; };
+		A7B83569213A704D004ACFF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B83568213A704D004ACFF1 /* ViewController.swift */; };
+		A7B8356C213A704D004ACFF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B8356A213A704D004ACFF1 /* Main.storyboard */; };
+		A7B8356E213A7050004ACFF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B8356D213A7050004ACFF1 /* Assets.xcassets */; };
+		A7B83571213A7050004ACFF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B8356F213A7050004ACFF1 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7818F22213B0D9100E439F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7B8355B213A704D004ACFF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7818F1C213B0D9100E439F1;
+			remoteInfo = OneSignalNotificationServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7818F18213AE9EA00E439F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A7818F17213AE9EA00E439F1 /* NMAKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7818F28213B0D9100E439F1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A7818F24213B0D9100E439F1 /* OneSignalNotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		296D037E2DE36ACF2A8893ED /* Pods-Hyroscop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyroscop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hyroscop/Pods-Hyroscop.debug.xcconfig"; sourceTree = "<group>"; };
+		8A9BCF43580CD922F410206D /* Pods-Hyroscop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hyroscop.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hyroscop/Pods-Hyroscop.release.xcconfig"; sourceTree = "<group>"; };
+		93F8597C77CFF4BF1914DBAE /* Pods_Hyroscop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hyroscop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A635785972A62C241602B820 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		A7818F14213AE08A00E439F1 /* NMAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = NMAKit.framework; sourceTree = "<group>"; };
+		A7818F1D213B0D9100E439F1 /* OneSignalNotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OneSignalNotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7818F1F213B0D9100E439F1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		A7818F21213B0D9100E439F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7818F29213B15DD00E439F1 /* ScoringClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoringClass.swift; sourceTree = "<group>"; };
+		A7818F2B213B2D0400E439F1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A7818F2E213BBD3D00E439F1 /* Hyroscop.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hyroscop.entitlements; sourceTree = "<group>"; };
+		A7B83563213A704D004ACFF1 /* Hyroscop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hyroscop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7B83566213A704D004ACFF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7B83568213A704D004ACFF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A7B8356B213A704D004ACFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A7B8356D213A7050004ACFF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7B83570213A7050004ACFF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7B83572213A7050004ACFF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCAE9029CF67E122B3975BB3 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneSignalNotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-OneSignalNotificationServiceExtension/Pods-OneSignalNotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		FF6A5060CB5DC20C1A0706AA /* Pods_OneSignalNotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneSignalNotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7818F1A213B0D9100E439F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5129DA250DEB3F4CFD03900A /* Pods_OneSignalNotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B83560213A704D004ACFF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7818F16213AE9EA00E439F1 /* NMAKit.framework in Frameworks */,
+				A7818F15213AE08A00E439F1 /* NMAKit.framework in Frameworks */,
+				9337CE4B4BF7F0FCDF138690 /* Pods_Hyroscop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		982A523245EB6B6B7BA52285 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7818F14213AE08A00E439F1 /* NMAKit.framework */,
+				93F8597C77CFF4BF1914DBAE /* Pods_Hyroscop.framework */,
+				FF6A5060CB5DC20C1A0706AA /* Pods_OneSignalNotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7818F1E213B0D9100E439F1 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				A7818F1F213B0D9100E439F1 /* NotificationService.swift */,
+				A7818F21213B0D9100E439F1 /* Info.plist */,
+			);
+			path = OneSignalNotificationServiceExtension;
+			sourceTree = "<group>";
+		};
+		A7B8355A213A704D004ACFF1 = {
+			isa = PBXGroup;
+			children = (
+				A7B83565213A704D004ACFF1 /* Hyroscop */,
+				A7818F1E213B0D9100E439F1 /* OneSignalNotificationServiceExtension */,
+				A7B83564213A704D004ACFF1 /* Products */,
+				E0422AF3EA96BD6D9C1EEBF9 /* Pods */,
+				982A523245EB6B6B7BA52285 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A7B83564213A704D004ACFF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7B83563213A704D004ACFF1 /* Hyroscop.app */,
+				A7818F1D213B0D9100E439F1 /* OneSignalNotificationServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7B83565213A704D004ACFF1 /* Hyroscop */ = {
+			isa = PBXGroup;
+			children = (
+				A7818F2E213BBD3D00E439F1 /* Hyroscop.entitlements */,
+				A7B83566213A704D004ACFF1 /* AppDelegate.swift */,
+				A7B83568213A704D004ACFF1 /* ViewController.swift */,
+				A7818F29213B15DD00E439F1 /* ScoringClass.swift */,
+				A7818F2B213B2D0400E439F1 /* Model.swift */,
+				A7B8356A213A704D004ACFF1 /* Main.storyboard */,
+				A7B8356D213A7050004ACFF1 /* Assets.xcassets */,
+				A7B8356F213A7050004ACFF1 /* LaunchScreen.storyboard */,
+				A7B83572213A7050004ACFF1 /* Info.plist */,
+			);
+			path = Hyroscop;
+			sourceTree = "<group>";
+		};
+		E0422AF3EA96BD6D9C1EEBF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				296D037E2DE36ACF2A8893ED /* Pods-Hyroscop.debug.xcconfig */,
+				8A9BCF43580CD922F410206D /* Pods-Hyroscop.release.xcconfig */,
+				A635785972A62C241602B820 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */,
+				FCAE9029CF67E122B3975BB3 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7818F1C213B0D9100E439F1 /* OneSignalNotificationServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7818F25213B0D9100E439F1 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */;
+			buildPhases = (
+				3AD0C3E9F580BE702EAB507C /* [CP] Check Pods Manifest.lock */,
+				A7818F19213B0D9100E439F1 /* Sources */,
+				A7818F1A213B0D9100E439F1 /* Frameworks */,
+				A7818F1B213B0D9100E439F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OneSignalNotificationServiceExtension;
+			productName = OneSignalNotificationServiceExtension;
+			productReference = A7818F1D213B0D9100E439F1 /* OneSignalNotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A7B83562213A704D004ACFF1 /* Hyroscop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B83575213A7050004ACFF1 /* Build configuration list for PBXNativeTarget "Hyroscop" */;
+			buildPhases = (
+				446B44BF2CF3383A9BD30870 /* [CP] Check Pods Manifest.lock */,
+				A7B8355F213A704D004ACFF1 /* Sources */,
+				A7B83560213A704D004ACFF1 /* Frameworks */,
+				A7B83561213A704D004ACFF1 /* Resources */,
+				D0666FFD4443788FFBB23D5C /* [CP] Embed Pods Frameworks */,
+				A7818F18213AE9EA00E439F1 /* Embed Frameworks */,
+				A7818F28213B0D9100E439F1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7818F23213B0D9100E439F1 /* PBXTargetDependency */,
+			);
+			name = Hyroscop;
+			productName = Hyroscop;
+			productReference = A7B83563213A704D004ACFF1 /* Hyroscop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7B8355B213A704D004ACFF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Mikhail Lutskii";
+				TargetAttributes = {
+					A7818F1C213B0D9100E439F1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A7B83562213A704D004ACFF1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A7B8355E213A704D004ACFF1 /* Build configuration list for PBXProject "Hyroscop" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7B8355A213A704D004ACFF1;
+			productRefGroup = A7B83564213A704D004ACFF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7B83562213A704D004ACFF1 /* Hyroscop */,
+				A7818F1C213B0D9100E439F1 /* OneSignalNotificationServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7818F1B213B0D9100E439F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B83561213A704D004ACFF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B83571213A7050004ACFF1 /* LaunchScreen.storyboard in Resources */,
+				A7B8356E213A7050004ACFF1 /* Assets.xcassets in Resources */,
+				A7B8356C213A704D004ACFF1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AD0C3E9F580BE702EAB507C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneSignalNotificationServiceExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		446B44BF2CF3383A9BD30870 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hyroscop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0666FFD4443788FFBB23D5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Hyroscop/Pods-Hyroscop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper+Realm/ObjectMapper_Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper_Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hyroscop/Pods-Hyroscop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7818F19213B0D9100E439F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7818F20213B0D9100E439F1 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7B8355F213A704D004ACFF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7B83569213A704D004ACFF1 /* ViewController.swift in Sources */,
+				A7B83567213A704D004ACFF1 /* AppDelegate.swift in Sources */,
+				A7818F2A213B15DD00E439F1 /* ScoringClass.swift in Sources */,
+				A7818F2C213B2D0400E439F1 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7818F23213B0D9100E439F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7818F1C213B0D9100E439F1 /* OneSignalNotificationServiceExtension */;
+			targetProxy = A7818F22213B0D9100E439F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7B8356A213A704D004ACFF1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7B8356B213A704D004ACFF1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A7B8356F213A7050004ACFF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7B83570213A7050004ACFF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7818F26213B0D9100E439F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A635785972A62C241602B820 /* Pods-OneSignalNotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.Sochi.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7818F27213B0D9100E439F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCAE9029CF67E122B3975BB3 /* Pods-OneSignalNotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				INFOPLIST_FILE = OneSignalNotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.Sochi.OneSignalNotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7B83573213A7050004ACFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7B83574213A7050004ACFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7B83576213A7050004ACFF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296D037E2DE36ACF2A8893ED /* Pods-Hyroscop.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hyroscop/Hyroscop.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Hyroscop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.Sochi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7B83577213A7050004ACFF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A9BCF43580CD922F410206D /* Pods-Hyroscop.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Hyroscop/Hyroscop.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = Hyroscop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.Sochi;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7818F25213B0D9100E439F1 /* Build configuration list for PBXNativeTarget "OneSignalNotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7818F26213B0D9100E439F1 /* Debug */,
+				A7818F27213B0D9100E439F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B8355E213A704D004ACFF1 /* Build configuration list for PBXProject "Hyroscop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B83573213A7050004ACFF1 /* Debug */,
+				A7B83574213A7050004ACFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B83575213A7050004ACFF1 /* Build configuration list for PBXNativeTarget "Hyroscop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B83576213A7050004ACFF1 /* Debug */,
+				A7B83577213A7050004ACFF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7B8355B213A704D004ACFF1 /* Project object */;
+}
